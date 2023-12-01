@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar color="secondary" style="font-family: 'Roboto', sans-serif;">
+      <ion-title>Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    <div class="ion-text-center" style="font-family: 'Open Sans', sans-serif; color: #555; margin-bottom: 20px;">
+      <h3 style="font-size: 1.5em; font-weight: bold;">Selamat datang!</h3>
+      <p style="font-size: 1em;">Silahkan masukkan username dan password</p>
+    </div>
+  
+    <ion-item lines="full" style="margin-bottom: 15px;">
+      <ion-label position="floating" color="tertiary" style="font-family: 'Open Sans', sans-serif; font-size: 0.9em;">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" required style="font-size: 0.9em;"></ion-input>
+    </ion-item>
+  
+    <ion-item lines="full" style="margin-bottom: 15px;">
+      <ion-label position="floating" color="tertiary" style="font-family: 'Open Sans', sans-serif; font-size: 0.9em;">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" required style="font-size: 0.9em;"></ion-input>
+    </ion-item>
+  
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="6">
+        <ion-button color="success" expand="full" (click)="login()" style="font-family: 'Montserrat', sans-serif;">Login</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+  
